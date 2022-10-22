@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="5.651">
+    <testcase classname="Validation RSCourse Maps API" name="Verify EndToEnd API" time="3.235">
+        <system-out><![CDATA[Given AddPlace Request Payload with "(+91) 999 999 9999"....................passed
+When User hits "AddPlace" API with "POST" http request......................passed
+Then API call response with status code 200.................................passed
+And Validate Response Payload "status" is "OK"..............................passed
+And Get Response Payload "place_id" value...................................passed
+Given DeletePlace Request Payload...........................................passed
+When User hits "DeletePlace" API with "delete" http request.................passed
+Then API call response with status code 200.................................passed
+And Validate Response Payload "status" is "OK"..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validation RSCourse Maps API" name="Verify EndToEnd API 2" time="0.74">
+        <system-out><![CDATA[Given AddPlace Request Payload with "(+91) 111 111 1111"....................passed
+When User hits "AddPlace" API with "POST" http request......................passed
+Then API call response with status code 200.................................passed
+And Validate Response Payload "status" is "OK"..............................passed
+And Get Response Payload "place_id" value...................................passed
+Given DeletePlace Request Payload...........................................passed
+When User hits "DeletePlace" API with "delete" http request.................passed
+Then API call response with status code 200.................................passed
+And Validate Response Payload "status" is "OK"..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validation RSCourse Maps API" name="Verify DeletePlace API" time="0.734">
+        <system-out><![CDATA[Given DeletePlace Request Payload...........................................passed
+When User hits "DeletePlace" API with "delete" http request.................passed
+Then API call response with status code 200.................................passed
+And Validate Response Payload "status" is "OK"..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validation RSCourse Maps API" name="Verify AddPlace API" time="0.745">
+        <system-out><![CDATA[Given AddPlace Request Payload with "(+91) 999 999 9999"....................passed
+When User hits "AddPlace" API with "POST" http request......................passed
+Then API call response with status code 200.................................passed
+And Validate Response Payload "status" is "OK"..............................passed
+And Get Response Payload "place_id" value...................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
