@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="31" failures="0" name="testRunner.TestRunner" time="5.251" errors="0" skipped="0">
+<testsuite tests="31" failures="0" name="testRunner.TestRunner" time="9.253" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.2+7-67"/>
@@ -50,45 +50,43 @@
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.version" value="16.0.2"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="maven.home" value="C:\Program Files\ApacheMaven-3.8.6"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2021-07-20"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Verify EndToEnd API #1" name="AddPlace Request Payload with &quot;(+91) 999 999 9999&quot;" time="0.637"/>
-  <testcase classname="Verify EndToEnd API #1" name="User hits &quot;AddPlace&quot; API with &quot;POST&quot; http request" time="1.173"/>
-  <testcase classname="Verify EndToEnd API #1" name="API call response with status code 200" time="0.02"/>
-  <testcase classname="Verify EndToEnd API #1" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="0.672"/>
-  <testcase classname="Verify EndToEnd API #1" name="Get Response Payload &quot;place_id&quot; value" time="0.014"/>
-  <testcase classname="Verify EndToEnd API #1" name="DeletePlace Request Payload" time="0.001"/>
-  <testcase classname="Verify EndToEnd API #1" name="User hits &quot;DeletePlace&quot; API with &quot;delete&quot; http request" time="0.682"/>
-  <testcase classname="Verify EndToEnd API #1" name="API call response with status code 200" time="0.001"/>
-  <testcase classname="Verify EndToEnd API #1" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="0.009"/>
-  <testcase classname="Verify EndToEnd API #1" name="Verify EndToEnd API #1" time="0.014"/>
-  <testcase classname="Verify EndToEnd API #2" name="AddPlace Request Payload with &quot;(+91) 111 111 1111&quot;" time="0.001"/>
-  <testcase classname="Verify EndToEnd API #2" name="User hits &quot;AddPlace&quot; API with &quot;POST&quot; http request" time="0.186"/>
-  <testcase classname="Verify EndToEnd API #2" name="API call response with status code 200" time="0.001"/>
-  <testcase classname="Verify EndToEnd API #2" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="0.011"/>
-  <testcase classname="Verify EndToEnd API #2" name="Get Response Payload &quot;place_id&quot; value" time="0.008"/>
-  <testcase classname="Verify EndToEnd API #2" name="DeletePlace Request Payload" time="0.001"/>
-  <testcase classname="Verify EndToEnd API #2" name="User hits &quot;DeletePlace&quot; API with &quot;delete&quot; http request" time="0.518"/>
-  <testcase classname="Verify EndToEnd API #2" name="API call response with status code 200" time="0.001"/>
-  <testcase classname="Verify EndToEnd API #2" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="0.009"/>
-  <testcase classname="Verify EndToEnd API #2" name="Verify EndToEnd API #2" time="0.01"/>
-  <testcase classname="Verify DeletePlace API" name="DeletePlace Request Payload" time="0.001"/>
-  <testcase classname="Verify DeletePlace API" name="User hits &quot;DeletePlace&quot; API with &quot;delete&quot; http request" time="0.508"/>
-  <testcase classname="Verify DeletePlace API" name="API call response with status code 200" time="0.002"/>
-  <testcase classname="Verify DeletePlace API" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="0.01"/>
-  <testcase classname="Verify DeletePlace API" name="Verify DeletePlace API" time="0.01"/>
-  <testcase classname="Verify AddPlace API" name="AddPlace Request Payload with &quot;(+91) 999 999 9999&quot;" time="0"/>
-  <testcase classname="Verify AddPlace API" name="User hits &quot;AddPlace&quot; API with &quot;POST&quot; http request" time="0.203"/>
-  <testcase classname="Verify AddPlace API" name="API call response with status code 200" time="0.001"/>
-  <testcase classname="Verify AddPlace API" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="0.007"/>
-  <testcase classname="Verify AddPlace API" name="Get Response Payload &quot;place_id&quot; value" time="0.008"/>
-  <testcase classname="Verify AddPlace API" name="Verify AddPlace API" time="0.532"/>
+  <testcase classname="Verify EndToEnd API #1" name="AddPlace Request Payload with &quot;(+91) 999 999 9999&quot;" time="1.232"/>
+  <testcase classname="Verify EndToEnd API #1" name="User hits &quot;AddPlace&quot; API with &quot;POST&quot; http request" time="2.031"/>
+  <testcase classname="Verify EndToEnd API #1" name="API call response with status code 200" time="0.063"/>
+  <testcase classname="Verify EndToEnd API #1" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="1.233"/>
+  <testcase classname="Verify EndToEnd API #1" name="Get Response Payload &quot;place_id&quot; value" time="0.035"/>
+  <testcase classname="Verify EndToEnd API #1" name="DeletePlace Request Payload" time="0.003"/>
+  <testcase classname="Verify EndToEnd API #1" name="User hits &quot;DeletePlace&quot; API with &quot;delete&quot; http request" time="0.954"/>
+  <testcase classname="Verify EndToEnd API #1" name="API call response with status code 200" time="0.002"/>
+  <testcase classname="Verify EndToEnd API #1" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="0.021"/>
+  <testcase classname="Verify EndToEnd API #1" name="Verify EndToEnd API #1" time="0.032"/>
+  <testcase classname="Verify EndToEnd API #2" name="AddPlace Request Payload with &quot;(+91) 111 111 1111&quot;" time="0.003"/>
+  <testcase classname="Verify EndToEnd API #2" name="User hits &quot;AddPlace&quot; API with &quot;POST&quot; http request" time="0.373"/>
+  <testcase classname="Verify EndToEnd API #2" name="API call response with status code 200" time="0.004"/>
+  <testcase classname="Verify EndToEnd API #2" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="0.051"/>
+  <testcase classname="Verify EndToEnd API #2" name="Get Response Payload &quot;place_id&quot; value" time="0.049"/>
+  <testcase classname="Verify EndToEnd API #2" name="DeletePlace Request Payload" time="0.004"/>
+  <testcase classname="Verify EndToEnd API #2" name="User hits &quot;DeletePlace&quot; API with &quot;delete&quot; http request" time="1.091"/>
+  <testcase classname="Verify EndToEnd API #2" name="API call response with status code 200" time="0.004"/>
+  <testcase classname="Verify EndToEnd API #2" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="0.042"/>
+  <testcase classname="Verify EndToEnd API #2" name="Verify EndToEnd API #2" time="0.047"/>
+  <testcase classname="Verify DeletePlace API" name="DeletePlace Request Payload" time="0.005"/>
+  <testcase classname="Verify DeletePlace API" name="User hits &quot;DeletePlace&quot; API with &quot;delete&quot; http request" time="0.889"/>
+  <testcase classname="Verify DeletePlace API" name="API call response with status code 200" time="0.005"/>
+  <testcase classname="Verify DeletePlace API" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="0.024"/>
+  <testcase classname="Verify DeletePlace API" name="Verify DeletePlace API" time="0.026"/>
+  <testcase classname="Verify AddPlace API" name="AddPlace Request Payload with &quot;(+91) 999 999 9999&quot;" time="0.002"/>
+  <testcase classname="Verify AddPlace API" name="User hits &quot;AddPlace&quot; API with &quot;POST&quot; http request" time="0.3"/>
+  <testcase classname="Verify AddPlace API" name="API call response with status code 200" time="0.002"/>
+  <testcase classname="Verify AddPlace API" name="Validate Response Payload &quot;status&quot; is &quot;OK&quot;" time="0.027"/>
+  <testcase classname="Verify AddPlace API" name="Get Response Payload &quot;place_id&quot; value" time="0.03"/>
+  <testcase classname="Verify AddPlace API" name="Verify AddPlace API" time="0.669"/>
 </testsuite>

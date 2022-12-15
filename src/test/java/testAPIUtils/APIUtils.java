@@ -40,7 +40,6 @@ public class APIUtils {
 		return ReqSpec;
 	}
 	
-	
 	protected ResponseSpecification RSMaps_ResSpecBuild() {
 		ResSpec = 
 			new ResponseSpecBuilder().
@@ -52,7 +51,6 @@ public class APIUtils {
 	protected String getMemberValueUsingJsonPath(Response APIResponse, String MemberJsonPath) {
 		String APIStringResponse = APIResponse.asString();
 		JsonPath APIJsonResponse = new JsonPath(APIStringResponse);
-		
 		return APIJsonResponse.getString(MemberJsonPath).trim();
 	}
 }

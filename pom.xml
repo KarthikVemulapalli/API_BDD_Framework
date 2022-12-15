@@ -106,13 +106,15 @@
 	</dependencies>  
 	
 	
-	<!-- Cucumber Reporting
+	<!-- Cucumber Reporting (damianszczepanik/mvn-cucumber-reporting)
 		1. The below code is copied from git link 'https://github.com/damianszczepanik/maven-cucumber-reporting' for cucumber reporting
 		2. Change version and get Json Reports path. 
 		3. Comment out ClassificationFiles lines
 		4. Basically this will take result .json file as input and generate clean .html report
 		5. So to provide .json result file, we have written plugin parameter and mentioned path to generate .json file in testRunner class.
 		6. html reports are generated in 'report/cucumber-html-reports' path
+		7. Execute in 'mvn verify' phase to generate html reports.
+		8. Output html files are saved in 'target/cucumber-html-reports' folder
 	-->
 	 <build>
         <plugins>
@@ -130,6 +132,7 @@
                 <executions>
                     <execution>
                         <id>execution</id>
+                        <!-- This plugin execute in maven verify phase -->
                         <phase>verify</phase>
                         <goals>
                             <goal>generate</goal>
@@ -138,14 +141,20 @@
                             <projectName>cucumber-jvm-example</projectName>
                             <!-- optional, per documentation set this to "true" to bypass generation of Cucumber Reports entirely, defaults to false if not specified -->
                             <skip>false</skip>
-                            <!-- output directory for the generated report -->
+                            
+                            <!-- output directory for the generated report
+                            	Output html files are saved in 'target/cucumber-html-reports' folder
+                           		${project.build.directory} is target folder -->
                             <outputDirectory>${project.build.directory}</outputDirectory>
+                            
                             <!-- optional, defaults to outputDirectory if not specified -->
+                            <!-- json files are taken from the below path -->
                             <inputDirectory>${project.build.directory}/cucumber-json-reports</inputDirectory>
                             <jsonFiles>
                                 <!-- supports wildcard or name pattern -->
                                 <param>**/*.json</param>
                             </jsonFiles>
+                            
                             <!-- optional, defaults to outputDirectory if not specified -->
                             <!-- <classificationDirectory>${project.build.directory}/classifications</classificationDirectory>
                             <classificationFiles>
@@ -153,11 +162,15 @@
                                     <param>sample.properties</param>
                                     <param>other.properties</param>
                             </classificationFiles> -->
+                            
                             <parallelTesting>false</parallelTesting>
+                            
                             <!-- optional, set true to group features by its Ids -->
                             <mergeFeaturesById>false</mergeFeaturesById>
+                            
                             <!-- optional, set true to get a final report with latest results of the same test from different test runs -->
                             <mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
+                            
                             <!-- optional, set true to fail build on test failures -->
                             <checkBuildResult>false</checkBuildResult>
                         </configuration>
