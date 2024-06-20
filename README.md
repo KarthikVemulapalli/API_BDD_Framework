@@ -1,7 +1,8 @@
 **Project's Title**
+
 API Automation BDD Framework
 
-**Pre-Requisite**
+**Pre-Requisite**:
 Install latest Java Software Development Kit
 
 **Programming Language**
