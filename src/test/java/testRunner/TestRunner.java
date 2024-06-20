@@ -10,9 +10,9 @@ import io.cucumber.junit.CucumberOptions;
 		features = "src/test/resources/features"
 		,glue = {"stepDefinitions"}
 		,stepNotifications = true
-		,plugin = {"html:target/cucumber-json-reports/report.html", //Cucumber reports generation
-			"json:target/cucumber-json-reports/report.json",
-			"junit:target/cucumber-json-reports/report.xml"}
+		,plugin = {"html:reports/cucumber-json-reports/report.html", //Cucumber reports generation
+			"json:reports/cucumber-json-reports/report.json",
+			"junit:reports/cucumber-json-reports/report.xml"}
 //		,tags = "@DeletePlace"
 		)
 

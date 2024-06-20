@@ -14,7 +14,7 @@ public abstract class Utils {
 	}
 	
 	public static String saveLogsPath() {
-		String LogPath = System.getProperty("user.dir") + "\\logs\\";
+		String LogPath = System.getProperty("user.dir") + "\\reports\\";
 		return (LogPath + "log_" + getCurrentDateTime() + ".txt");
 	}
 	
