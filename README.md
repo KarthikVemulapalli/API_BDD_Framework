@@ -1,20 +1,22 @@
-**Project's Title**<br></br>
-API Automation BDD Framework
+<h2>Prerequisites</h2>
 
-**Pre-Requisite**:
-Install latest Java Software Development Kit
+* Install latest Java Software Development Kit
 
-**Programming Language**
+* Install Eclipse IDE
+<h2>Programming Language</h2>
 Java
 
-**API Test Automation Tool**
-Rest Assured
+<h2>Project Management Tool</h2>
+Maven: Open-source build automation and project management tool widely used for Java applications.
 
-**Testing Strategy**
+<h2>API Test Automation Tool</h2>
+<a href="https://rest-assured.io/">Rest Assured </a>: Java-based library specifically designed for automating the testing of RESTful APIs.
+
+<h2>Testing Strategy</h2>
 Behaviour Driven Development (BDD)
 
-**Behavioural Testing Tool**
-Cucumber using Gherkin
+<h2>Behavioural Testing Tool</h2>
+<a href='https://cucumber.io/docs/bdd/'>Cucumber using Gherkin</a>
 
-**Reporting**
+<h2>Test Reporting</h2>
 Cucumber Reports
